@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.org/shin1ohno/jani-from_json.svg)](https://travis-ci.org/shin1ohno/jani-from_json) [![Code Climate](https://codeclimate.com/github/shin1ohno/jani-from_json/badges/gpa.svg)](https://codeclimate.com/github/shin1ohno/jani-from_json) [![Test Coverage](https://codeclimate.com/github/shin1ohno/jani-from_json/badges/coverage.svg)](https://codeclimate.com/github/shin1ohno/jani-from_json)
+
 # Jani::FromJson
 
-TODO: Write a gem description
+Convert JSON data into jani structured movie object.
 
 ## Installation
 
@@ -20,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "jani/from_json"
+
+movie = Jani::FromJson.to_movie(json_data) #-> movie object
+
+movie.strips #-> array of strip
+movie.tracking_events #-> array of tracking events
+#... see Jani::FromJson::Movie
+```
 
 ## Contributing
 

@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Jani::FromJson::VERSION
   spec.authors       = ["Ohno Shin'ichi"]
   spec.email         = ["ohno@cookpad.com"]
-  spec.summary       = %q{Convert JSON data into jani formatted HTML string.}
-  spec.description   = %q{Convert JSON data into jani formatted HTML string.}
+  spec.summary       = %q{Convert JSON data into jani structured movie object.}
+  spec.description   = %q{Convert JSON data into jani structured movie object.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
