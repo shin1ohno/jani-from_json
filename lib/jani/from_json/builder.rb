@@ -26,10 +26,12 @@ class Jani::FromJson::Builder
   end
 
   def new_loading_banner
+    return Jani::FromJson::Banner.new unless hashed_data["loading_banner"]
     Jani::FromJson::Banner.new.tap { |b| b.image_url = hashed_data["loading_banner"]["image_url"] }
   end
 
   def new_postroll_banner
+    return Jani::FromJson::Banner.new unless hashed_data["postroll_banner"]
     Jani::FromJson::Banner.new.tap do |b|
       b.image_url = hashed_data["postroll_banner"]["image_url"]
       b.url = hashed_data["postroll_banner"]["url"]
@@ -37,6 +39,7 @@ class Jani::FromJson::Builder
   end
 
   def new_strips
+    return [] unless hashed_data["strips"]
     hashed_data["strips"].map do |strip_data|
       Jani::FromJson::Strip.new.tap do |s|
         s.index = strip_data["index"]
@@ -47,6 +50,7 @@ class Jani::FromJson::Builder
   end
 
   def new_tracking_events
+    return [] unless hashed_data["tracking_events"]
     hashed_data["tracking_events"].map do |strip_data|
       Jani::FromJson::TrackingEvent.new.tap do |t|
         t.label = strip_data["label"]
