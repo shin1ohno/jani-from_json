@@ -8,4 +8,9 @@ class Jani::FromJson::Movie
                 :postroll_banner,
                 :strips,
                 :tracking_events
+
+  def initialize
+    @strips = []
+    @tracking_events =[]
+  end
 end
