@@ -17,6 +17,7 @@ RSpec.describe Jani::FromJson::Builder do
       expect(movie.frame_height).to eq 360
       expect(movie.fps).to eq 13
       expect(movie.pixel_ratio).to eq 2
+      expect(movie.conversion_status).to eq Jani::FromJson::Movie::CONVERTED_STATUS
     end
   end
 

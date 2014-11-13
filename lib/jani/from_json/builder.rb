@@ -22,6 +22,7 @@ class Jani::FromJson::Builder
       m.postroll_banner = new_postroll_banner
       m.strips = new_strips
       m.tracking_events = new_tracking_events
+      m.conversion_status = hashed_data["conversion_status"]
     end
   end
 
