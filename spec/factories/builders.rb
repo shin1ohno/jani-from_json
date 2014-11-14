@@ -7,7 +7,7 @@ FactoryGirl.define do
                     "frame_width": 640,
                     "frame_height": 360,
                     "fps": 13,
-                    "source_url": "https://s3-ap-northeast-1.amazonaws.com/misc.ap-northeast-1/movie-ad-transcoder/uploads/production/movies/cfcce0c6-e046-429f-89c0-8a24202ecf89/cocoa_banner_1280_720_30fps.mp4?AWSAccessKeyId=AKIAJ7N5XNK2HNRTIIXQ&Signature=DErGtqEOJxhArsrmmte7CrxZGz0%3D&Expires=1415336757",
+                    "source_url": "http://example.com/uploads/production/movies/cfcce0c6-e046-429f-89c0-8a24202ecf89/video_1280_720_30fps.mp4",
                     "pixel_ratio": 2,
                     "conversion_status": "converted",
                     "loading_banner": {
