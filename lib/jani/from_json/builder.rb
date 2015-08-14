@@ -7,7 +7,7 @@ require "jani/from_json/tracking_event"
 class Jani::FromJson::Builder
   attr_accessor :json_data
 
-  def initialize(json_data: json_data)
+  def initialize(json_data: {}.to_s)
     @json_data = json_data
   end
 
